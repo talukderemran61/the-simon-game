@@ -11,6 +11,10 @@ body {
   color: #FEF2BF;
 }
 
+#level-title {
+  margin: 2% 5%;
+}
+
 #level-num,
 #level-score,
 #level-hscore,
