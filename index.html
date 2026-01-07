@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <main class="main-container">
+    <h1 id="mobile-title">Simon Game</h1>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <h6 id="level-score">Score: -</h6>
+    <h6 id="level-hscore">Highest score: -</h6>
+    <div class="container">
+      <div class="countdown-wrapper">
+        <div class="count-start"></div>
+      </div>
+      <div class="animate-container">
+        <div class="row">
+
+          <div type="button" id="green" position="1" class="btn green btn-1">
+
+          </div>
+
+          <div type="button" id="red" position="2" class="2 btn red btn-2">
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div type="button" id="yellow" position="3" class="3 btn yellow btn-3">
+
+          </div>
+          <div type="button" id="blue" position="4" class="4 btn blue btn-4">
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div type="play" class="mobile-btn">Play</div>
+    </div>
+  </main>
+
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery CDN -->
+  <script src="main.js"></script>
+</body>
+
+</html>

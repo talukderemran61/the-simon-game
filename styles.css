@@ -1,0 +1,148 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title,
+#mobile-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+#level-num,
+#level-score,
+#level-hscore,
+.countdown-wrapper,
+.mobile-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #FEF2BF;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.animate-container {
+  background-color: rgba(255, 255, 255, 0.54);
+  border: 10px solid black;
+  border-radius: 10%;
+  width: max-content;
+  margin: auto;
+}
+
+.game-on {
+  box-shadow: 8px 13px 10px 10px rgba(255, 255, 255, 0.411);
+  transform: translate(-10px, -10px);
+  transition: transform 1s ease-out, box-shadow 1s ease-out;
+}
+
+.countdown-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  z-index: 3;
+}
+
+.countdown {
+  transform: scale(1.5);
+  opacity: 0.5;
+  transform-origin: center;
+  text-shadow: 0 0 20px #fff;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.flashywhite {
+  background-color: rgba(255, 255, 255, 0.752);
+}
+
+.bg-glow {
+  box-shadow: 8px 13px 50px 15px rgba(255, 255, 255, 0.411);
+  transition: box-shadow 1s ease-in-out;
+}
+
+.game-over {
+  background-color: rgba(255, 255, 255, 0.263);
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.411);
+  transform: translate(0px, 0px);
+  transition: background-color 2s ease-in, transform 2s ease-in, box-shadow 2s ease-in;
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-btn, #mobile-title {
+  display: none;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    margin: 5vh auto;
+  }
+
+  #level-title {
+    display: none;
+  }
+
+  #mobile-title {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .mobile-btn {
+    display: block;
+    width: 10vh;
+    height: 20px;
+    margin: auto;
+    border: 2px solid #FEF2BF;
+    margin-top: 30px;
+    padding: 10px 15px;
+  }
+
+  .container{
+    margin: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
